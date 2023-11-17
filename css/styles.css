@@ -1,0 +1,131 @@
+@font-face {
+  font-family: LastEp;
+  src: url(../fonts/last_episode/LastEpisodeDEMO-Regular.otf);
+}
+@font-face {
+  font-family: TN;
+  src: url(../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+@font-face {
+  font-family: LastEp;
+  src: url(../fonts/last_episode/LastEpisodeDEMO-Regular.otf);
+}
+@font-face {
+  font-family: TN;
+  src: url(../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+.navbar {
+  font-family: TN;
+  background-color: #FDE3A8 !important;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+  border: none;
+}
+.navbar .navbar-toggler span {
+  transition: all 0.3s;
+}
+.navbar .navbar-toggler span:hover {
+  transform: scale(1.1);
+}
+.navbar .cont-nav .collapse, .navbar .cont-nav .collapsing {
+  justify-content: space-between;
+}
+.navbar .cont-nav .collapse form, .navbar .cont-nav .collapsing form {
+  margin: 0 auto;
+  justify-content: center;
+}
+.navbar .cont-nav .collapse form input, .navbar .cont-nav .collapsing form input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  width: 25rem;
+  box-shadow: none;
+}
+.navbar .cont-nav .collapse form input:focus, .navbar .cont-nav .collapsing form input:focus {
+  border: 0.02rem solid #dee2e6 !important;
+  border-right: none !important;
+}
+.navbar .cont-nav .collapse form #btn-search, .navbar .cont-nav .collapsing form #btn-search {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none !important;
+  background-color: #ffffff;
+  color: #F27649;
+}
+.navbar .cont-nav .collapse form #btn-search i, .navbar .cont-nav .collapsing form #btn-search i {
+  font-size: 1.5rem;
+}
+.navbar .cont-nav .collapse .navbar-nav, .navbar .cont-nav .collapsing .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar .cont-nav .collapse .navbar-nav .dropdown, .navbar .cont-nav .collapsing .navbar-nav .dropdown {
+  font-size: 1.2rem;
+}
+.navbar .cont-nav .collapse .navbar-nav .dropdown ul.dropdown-menu, .navbar .cont-nav .collapsing .navbar-nav .dropdown ul.dropdown-menu {
+  font-size: 1.05rem;
+  max-width: 20rem;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.navbar .cont-nav .collapse .navbar-nav .dropdown ul.dropdown-menu #add-address, .navbar .cont-nav .collapsing .navbar-nav .dropdown ul.dropdown-menu #add-address {
+  border: none;
+  background-color: #dee2e6;
+  border-top: 0.02 solid #F27649;
+  transition: all 0.3s;
+}
+.navbar .cont-nav .collapse .navbar-nav .dropdown ul.dropdown-menu #add-address:hover, .navbar .cont-nav .collapsing .navbar-nav .dropdown ul.dropdown-menu #add-address:hover {
+  background-color: #F27649;
+  color: #ffffff;
+}
+.navbar .cont-nav .collapse .navbar-nav .dropdown ul.dropdown-menu #add-address i, .navbar .cont-nav .collapsing .navbar-nav .dropdown ul.dropdown-menu #add-address i {
+  font-size: 1.05rem;
+}
+.navbar .cont-nav .collapse .navbar-nav .car, .navbar .cont-nav .collapsing .navbar-nav .car {
+  width: 50px;
+  height: 50px;
+}
+.navbar .cont-nav .collapse .navbar-nav .car button, .navbar .cont-nav .collapsing .navbar-nav .car button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: #1190CB !important;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  outline: none;
+}
+.navbar .cont-nav .collapse .navbar-nav .car button:hover, .navbar .cont-nav .collapsing .navbar-nav .car button:hover {
+  opacity: 0.8;
+}
+.navbar .cont-nav .collapse .navbar-nav .car button:active, .navbar .cont-nav .collapsing .navbar-nav .car button:active {
+  transform: scale(0.85);
+}
+.navbar .cont-nav .collapse .navbar-nav .profile, .navbar .cont-nav .collapsing .navbar-nav .profile {
+  width: 50px;
+  height: 50px;
+}
+.navbar .cont-nav .collapse .navbar-nav .profile button, .navbar .cont-nav .collapsing .navbar-nav .profile button {
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  transition: all 0.3s;
+}
+.navbar .cont-nav .collapse .navbar-nav .profile button:hover, .navbar .cont-nav .collapsing .navbar-nav .profile button:hover {
+  color: #1190CB;
+}
+
+/*# sourceMappingURL=styles.css.map */

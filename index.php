@@ -53,7 +53,7 @@ include_once("./sistema/config/connection.php");
 
                                 $_SESSION["emailE"] = $emailE;
                                 $_SESSION["name-user"] = $row["nm_user"];
-                                header("Location: index.html");
+                                header("Location: main.html"); 
                             }
                         } else {
                             // Usuário não encontrado

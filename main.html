@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imgs/favicon-cropped.svg" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Home - EzPets</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3 d-flex flex-column">
+        <div class="container-fluid cont-nav" style="gap: 1rem;">
+            <a class="navbar-brand d-flex" href="#" style="width: 7rem;"><img src="./imgs/logo-ezpets.svg"
+                    alt="Logo EzPts" style="width: 100%; height: 100%;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success border" type="submit" id="btn-search"><i class="bi bi-search"></i></button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Rua Jose Bonifacio, 5555
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item mb-0" href="#">Rua João Calixto Alvez, 809</a></li>
+                            <li><button class="w-100" id="add-address"><i class="bi bi-plus-circle ms-1"></i></button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item car">
+                        <button class="nav-link" href="#"><i class="bi bi-cart2"></i></button>
+                    </li>
+                    <li class="nav-item profile">
+                        <button class="nav-link" href="#"><i class="bi bi-person-circle"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

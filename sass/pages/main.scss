@@ -1,0 +1,123 @@
+@import "../others/colors.scss";
+@import "../others/fonts.scss";
+.navbar {
+  font-family: TN;
+  background-color: $terc-color !important;
+  .navbar-toggler{
+    box-shadow: none;
+    border: none;
+    span{
+      transition: all .3s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .cont-nav {
+    .collapse, .collapsing {
+      justify-content: space-between;
+      form {
+        margin: 0 auto;
+
+        // align-items: center;
+        justify-content: center;
+        input {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-right: none;
+          width: 25rem;
+          box-shadow: none;
+
+          &:focus {
+            border: 0.02rem solid #dee2e6 !important;
+            border-right: none !important;
+          }
+        }
+
+        #btn-search {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-left: none !important;
+          background-color: $white-color;
+          color: $primary-color;
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        .dropdown {
+          font-size: 1.2rem;
+          ul.dropdown-menu{
+            font-size: 1.05rem;
+            max-width: 20rem;
+            padding-bottom: 0;
+            overflow: hidden;
+            #add-address{
+              border: none;
+              background-color: #dee2e6;
+              border-top: 0.02 solid $primary-color;
+              transition: all .3s;
+              &:hover{
+                background-color: $primary-color;
+                color: $white-color;
+              }
+              i{
+            font-size: 1.05rem;
+
+              }
+            }
+          }
+        }
+        .car {
+          width: 50px;
+          height: 50px;
+          button {
+            display: flex;
+          align-items: center;
+          justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: $white-color;
+            font-size: 2rem;
+            background-color: $secundary-color !important;
+            border: none;
+            border-radius: 50%;
+            transition: all .3s;
+            outline: none;
+            &:hover{
+              opacity: .8;
+            }
+            &:active{
+              transform: scale(.85); 
+            }
+          }
+        }
+        .profile {
+          width: 50px;
+          height: 50px;
+          button{
+            display: flex;
+            outline: none;
+          align-items: center;
+          justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            font-size: 2.5rem;
+            transition: all .3s;
+            &:hover{
+              color: $secundary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

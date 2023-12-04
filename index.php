@@ -100,6 +100,16 @@ include_once("./sistema/config/connection.php");
                                 $stmt->bindParam(":emailL", $emailL);
                                 $stmt->bindParam(":passwL", $passwL);
                                 $stmt->execute();
+
+                                $stmt2 = $conn->prepare("SELECT id_user FROM tb_user WHERE nm_user_email = :uemail");
+                                $stmt2->bindParam("uemail", $emailL);
+                                $stmt2->execute();
+                                $idUser = $stmt2->fetch(PDO::FETCH_ASSOC);
+
+                                $stmt3 = $conn->prepare("INSERT INTO tb_user_address(cd_user_id, cd_cep_user, ds_num, nm_street, uf_user, nm_city, ds_complemento, nm_neighbor) VALUES(:id, '0000000000', '0', '-', '-', '-', '-', '-');");
+                                $stmt3->bindParam(":id", $idUser['id_user']);
+                                $stmt3->execute();
+
                                 echo '<div class="alert alert-success" role="alert" style="text-align: center; margin-top: 10px;">
         Cadastro realizado com sucesso! Agora é só entrar na sua conta.
       </div>';

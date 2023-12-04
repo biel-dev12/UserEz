@@ -15,8 +15,11 @@
   font-family: TN;
   src: url(../fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
 }
-.navbar {
+body {
   font-family: TN;
+}
+
+.navbar {
   background-color: #FDE3A8 !important;
 }
 .navbar .navbar-toggler {
@@ -29,6 +32,10 @@
 .navbar .navbar-toggler span:hover {
   transform: scale(1.1);
 }
+.navbar .cont-nav .navbar-collapse.show {
+  overflow-y: auto;
+  overscroll-behavior-y: contain; /* Evita o comportamento de overscrolling */
+}
 .navbar .cont-nav .collapse,
 .navbar .cont-nav .collapsing {
   justify-content: space-between;
@@ -36,6 +43,7 @@
 .navbar .cont-nav .collapse form,
 .navbar .cont-nav .collapsing form {
   margin: 0 auto;
+  display: flex;
   justify-content: center;
 }
 .navbar .cont-nav .collapse form input,
@@ -50,6 +58,12 @@
 .navbar .cont-nav .collapsing form input:focus {
   border: 0.02rem solid #dee2e6 !important;
   border-right: none !important;
+}
+@media (max-width: 800px) {
+  .navbar .cont-nav .collapse form input,
+  .navbar .cont-nav .collapsing form input {
+    width: 20rem;
+  }
 }
 .navbar .cont-nav .collapse form #btn-search,
 .navbar .cont-nav .collapsing form #btn-search {
@@ -150,6 +164,7 @@
 
 :root {
   --bs-primary-rgb: 253, 227, 168;
+  --bs-btn-bg: $primary-color;
 }
 
 #main-content {
@@ -189,4 +204,8 @@
   }
 }
 
-/*# sourceMappingURL=style2.css.map */
+body {
+  overflow-x: visible;
+}
+
+/*# sourceMappingURL=style4.css.map */

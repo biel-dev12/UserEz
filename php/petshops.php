@@ -7,7 +7,7 @@ foreach ($petshops as $petshop) {
 ?>
     <div class="col col-md-3 col-6 mb-4">
         <div class="card petshop-card" data-bs-toggle="modal" data-bs-target="#modalPetshop<?php echo $petshop['id_petshop']; ?>">
-            <img src="../../PetshopEz/php/img/profile/<?php echo $petshop['img_ps']; ?>" class="card-img-top" style="width: 100%; min-height:50%; background-color: #F27649;" alt="<?php echo "logo" . $petshop['nm_fantasy']; ?>">
+            <img src="../petshopes/php/<?php echo $petshop['img_ps']; ?>" class="card-img-top" style="width: 100%; min-height:50%; background-color: #F27649;" alt="<?php echo "logo" . $petshop['nm_fantasy']; ?>">
             <div class="card-body">
                 <h5 class="card-title fs-4"><?php echo $petshop['nm_fantasy']; ?></h5>
 
@@ -68,7 +68,7 @@ foreach ($petshops as $petshop) {
                     ?>
                             <div class="col">
                                 <div class="card text-center">
-                                    <img src="../../PetshopEz/php/<?php echo $product['img_pdc']; ?>" class="card-img-top img-fluid img-sm" alt="<?php echo $product['nm_pdc']; ?>">
+                                    <img src="../petshopes/php/<?php echo $product['img_pdc']; ?>" class="card-img-top img-fluid img-sm" alt="<?php echo $product['nm_pdc']; ?>">
                                     <div class="card-body">
                                         <p class="card-text text-success fw-bold fs-4">R$ <?php echo $product['vl_pdc']; ?></p>
                                         <h6 class="card-title fs-4 mt-1"><?php echo $product['nm_pdc']; ?></h6>

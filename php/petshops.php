@@ -7,7 +7,7 @@ foreach ($petshops as $petshop) {
 ?>
     <div class="col col-md-3 col-6 mb-4">
         <div class="card petshop-card" data-bs-toggle="modal" data-bs-target="#modalPetshop<?php echo $petshop['id_petshop']; ?>">
-            <img src="../petshopes/php/<?php echo $petshop['img_ps']; ?>" class="card-img-top" style="width: 100%; min-height:50%; background-color: #F27649;" alt="<?php echo "logo" . $petshop['nm_fantasy']; ?>">
+            <img src="../../petshopes/php/<?php echo $petshop['img_ps']; ?>" class="card-img-top" style="width: 100%; min-height:50%; background-color: #F27649;" alt="<?php echo "logo" . $petshop['nm_fantasy']; ?>">
             <div class="card-body">
                 <h5 class="card-title fs-4"><?php echo $petshop['nm_fantasy']; ?></h5>
 

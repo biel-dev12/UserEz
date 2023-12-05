@@ -67,26 +67,26 @@ foreach ($petshops as $petshop) {
                         foreach ($products as $product) {
                     ?>
                             <div class="col">
-                                <div class="card text-center">
+                                <form class="card text-center" method="post" action="main.php">
                                     <img src="../petshopes/php/<?php echo $product['img_pdc']; ?>" class="card-img-top img-fluid img-sm" alt="<?php echo $product['nm_pdc']; ?>">
                                     <div class="card-body">
                                         <p class="card-text text-success fw-bold fs-4">R$ <?php echo $product['vl_pdc']; ?></p>
                                         <h6 class="card-title fs-4 mt-1"><?php echo $product['nm_pdc']; ?></h6>
                                         <p class="card-text"><?php echo $product['ds_pdc']; ?></p>
-                                        <button class="btn" style="background-color: #F27649;"><i class="bi bi-plus-circle text-white fs-3"></i></button>
-                                    </div>
-                                </div>
+                                        <input type="hidden" name="produtoId" value="<?php echo $product['id_pdc']; ?>">
+                                        <button type="submit" name="adicionarAoCarrinho" class="btn  btn-add-to-cart" data-product-id="<?php echo $produto['id_pdc']; ?>" style="background-color: #F27649;"><i class="bi bi-plus-circle text-white fs-3"></i></button>
+                                </form>
                             </div>
-                    <?php
+                </div>
+        <?php
                         }
                         echo '</div>';
                     }
-                    ?>
-                </div>
+        ?>
             </div>
         </div>
     </div>
+    </div>
 <?php
 }
-
 ?>
